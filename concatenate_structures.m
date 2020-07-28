@@ -31,7 +31,7 @@ for i=1:length(fields)
 
             output.(fields{i}) = c;
         
-        else   % does this structure have it's own shape
+        else   % does this structure have its own shape
             
             for j=1:size(input,2);    
                 b(j) = concatenate_structures(input(j).(fields{i}),dim);
