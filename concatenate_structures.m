@@ -38,17 +38,11 @@ for i=1:length(fields)
             clear b;
 
             output.(fields{i}) = c;
-<<<<<<< HEAD
+
 
         else   % does this structure have it's own shape
 
             for j=1:size(input,2);
-=======
-        
-        else   % does this structure have its own shape
-            
-            for j=1:size(input,2);    
->>>>>>> 85fbc77e007a818be40551e9b1a2c8b95d0a6963
                 b(j) = concatenate_structures(input(j).(fields{i}),dim);
             end
                 c = concatenate_structures(b,dim);
